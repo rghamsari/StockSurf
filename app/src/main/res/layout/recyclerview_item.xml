@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+
+  >
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Cardview_Height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="12dp"
+        android:layout_margin="@dimen/card_margin"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/BCtitle"
+                android:layout_margin="@dimen/Text_Margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="High:"
+                android:textStyle="bold"
+                android:textSize="@dimen/TextSize"
+
+                />
+     <TextView
+         android:id="@+id/High"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintLeft_toRightOf="@id/BCtitle"
+         app:layout_constraintBaseline_toBaselineOf="@id/BCtitle"
+         android:layout_margin="@dimen/Text_Margin"
+         android:textSize="@dimen/TextSize"
+         android:textColor="@color/black"
+         />
+            <TextView
+                android:id="@+id/lowtitle"
+                android:layout_margin="@dimen/Text_Margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/BCtitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Low:"
+                android:textStyle="bold"
+                android:textSize="@dimen/TextSize"
+                />
+            <TextView
+                android:id="@+id/Low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/BCtitle"
+                app:layout_constraintBaseline_toBaselineOf="@id/lowtitle"
+                android:layout_margin="@dimen/Text_Margin"
+                android:textSize="@dimen/TextSize"
+                android:textColor="@color/black"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

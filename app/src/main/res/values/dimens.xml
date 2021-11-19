@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TextSize">24sp</dimen>
+    <dimen name="Text_Margin">8dp</dimen>
+    <dimen name="Cardview_Height">100dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+</resources>
